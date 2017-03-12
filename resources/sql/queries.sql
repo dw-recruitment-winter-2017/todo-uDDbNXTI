@@ -10,7 +10,7 @@ UPDATE todo
 SET state = :state
 WHERE id = :id
 
--- :name get-todo :? :1
+-- :name get-todos :? :1
 -- :doc retrieve a user given the id.
 SELECT * FROM todo
 WHERE id = :id

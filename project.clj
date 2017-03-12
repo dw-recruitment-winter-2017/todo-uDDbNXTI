@@ -7,6 +7,7 @@
                  [compojure "1.5.2"]
                  [conman "0.6.3"]
                  [cprop "0.1.10"]
+                 [bouncer "1.0.0"]
                  [funcool/struct "1.0.0"]
                  [luminus-immutant "0.2.3"]
                  [luminus-migrations "0.3.0"]
@@ -29,7 +30,7 @@
                  [ring-webjars "0.1.1"]
                  [ring/ring-core "1.6.0-RC1"]
                  [ring/ring-defaults "0.2.3"]
-                 [secretary "1.2.3"]
+                 [secretary "1.2.0"]
                  [selmer "1.10.6"]]
 
   :min-lein-version "2.0.0"

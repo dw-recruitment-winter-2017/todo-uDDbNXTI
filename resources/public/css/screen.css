@@ -1,17 +1,20 @@
 html,
 body {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+  line-height: 1.4em;
+  background: #eaeaea;
+  /* width: 520px; */
+  margin: 0 auto;
 }
 .navbar {
   margin-bottom: 10px;
-  border-radius: 0px;
 }
 .navbar-brand {
   float: none;
 }
 .navbar-nav .nav-item {
-  float: none;
+  float: left;
 }
 .navbar-divider,
 .navbar-nav .nav-item+.nav-item,
@@ -32,38 +35,54 @@ body {
   }
 }
 
-@-moz-keyframes three-quarters-loader {
-    0% {
-        -moz-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+.messages {
+  background: white;
+  /* width: 520px; */
 }
-@-webkit-keyframes three-quarters-loader {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-@keyframes three-quarters-loader {
-    0% {
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+ul {
+  list-style: none;
 }
 
+ul.messages li {
+  position: relative;
+  font-size: 16px;
+  padding: 5px;
+  border-bottom: 1px dotted #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li time {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+form, .error {
+  padding: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  background: white;
+}
+
+input{
+  margin-right:30px;
+}
+
+textarea {
+  margin-right:20px;
+}
+
+.btn {
+  padding-:2px;
+  background-color:blue;
+  margin-bottom:20px;
+}
+
+.intro { 
+  padding: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  background: white;
+}
