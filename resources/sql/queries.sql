@@ -1,21 +1,21 @@
--- :name create-user! :! :n
--- :doc creates a new user record
-INSERT INTO users
-(id, first_name, last_name, email, pass)
-VALUES (:id, :first_name, :last_name, :email, :pass)
+-- :name create-todo! :! :n
+-- :doc creates a todo
+INSERT INTO todo
+(id, state, description)
+VALUES (:id, :state, :description)
 
 -- :name update-user! :! :n
--- :doc update an existing user record
-UPDATE users
-SET first_name = :first_name, last_name = :last_name, email = :email
+-- :doc update an existing todo as completed/not completed
+UPDATE todo
+SET state = :state
 WHERE id = :id
 
--- :name get-user :? :1
+-- :name get-todo :? :1
 -- :doc retrieve a user given the id.
-SELECT * FROM users
+SELECT * FROM todo
 WHERE id = :id
 
--- :name delete-user! :! :n
--- :doc delete a user given the id
-DELETE FROM users
+-- :name delete-todo! :! :n
+-- :doc delete a todo given the id
+DELETE FROM todo
 WHERE id = :id
